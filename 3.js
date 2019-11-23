@@ -1,6 +1,7 @@
-var hasil = '';
+let hasil = '';
+var angka = /[0-9]/g;
 function arkademy(nilai) {
-    for( var i = 1; i <= nilai; i++) {
+    for(var i = 1; i <= nilai; i++) {
         if (i == 1) {
             hasil += i;
         }
@@ -15,14 +16,15 @@ function arkademy(nilai) {
        }
        else if(i % 7 != 0 && i % 3 != 0){
            hasil += ', ' + i;
-       }
-       
+       }  
     }
-    return hasil;
-    var huruf = /^[a-zA-Z0-9]/g;
-    if (nilai.match(huruf)) {
+    var data = String(nilai);
+    if (data.match(angka)) {
+        return hasil;
+    }
+    else {
         hasil += 'Input harus angka!';
+        return hasil;    
     }
-    return hasil;
 }
 console.log(hasil);
