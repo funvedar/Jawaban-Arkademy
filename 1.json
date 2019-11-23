@@ -2,7 +2,7 @@ function biodata(name, age) {
     return {
         name : name,
         age : age,
-        address : 'Komplek Ambuleuit E53 RT 02 RW 11 Kel Cigadung Kec Karangtanjung Kab Pnadeglang Banten',
+        address : 'Komplek Ambuleuit E53 RT 02 RW 11 Kel Cigadung Kec Karangtanjung Kab Pandeglang Banten',
         hobbies : ['bermain game', 'membaca buku'],
         is_married : false,
         list_school : [{
